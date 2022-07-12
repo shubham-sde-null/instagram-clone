@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --thinrb: 0.5px solid red;
+    --thickrb: 1px solid red;
+    --thinpb: 0.5px solid rgb(76, 0, 255);
+    --thinpb: 1px solid rgb(76, 0, 255);
+}
+
+.app {
+    background-color: #fafafa;
+    /* background is not completely white there is slight grayish coor */
+}
+
+.app_headerImage {
+    /* border: 0.5px solid red; */
+    width: 130px;
+    object-fit: contain;
+    /* The image keeps its aspect ratio, but is resized to fit within the given dimension */
+}
+
+.app__header {
+    background-color: white;
+    padding: 20px;
+    /* border: var(--thinrb); */
+    max-height: 37px;
+    border-bottom: 1px solid lightgray;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fafafa;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.app__singUp {
+    display: flex;
+    flex-direction: column;
+    /* border: var(--thickrb); */
+    justify-content: center;
+    padding: 20px;
+}
